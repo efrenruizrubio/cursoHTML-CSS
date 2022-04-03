@@ -1,8 +1,14 @@
 html{
+    /* Se aplican propiedades a la etiqueta html, por lo que todo lo que esté dentro de
+        esta etiqueta tendrá las reglas siguientes */
     font-size: 75%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1{
+    /* Aunque sea parte del html, el h1 es reconocido por el navegador como un
+        título, como una etiqueta aparte, no va a heredar los elementos de su clase
+        padre, pero al utilizar el atributo de "inherit" se obliga al elemento hijo a
+        utilizar los estilos de su elemento padre */
     font-size: inherit;
 }

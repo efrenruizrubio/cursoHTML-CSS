@@ -4,6 +4,18 @@
     padding: 0;
 }
 
+/* La especificidad tiene distintos niveles, desde los que más peso tienen, hasta los
+    que no, como el !important hasta una etiqueta simple, por buenas prácticas, se deben
+    de evitar utilizar los !important (1,0,0,0,0), como los estilos embebidos en las 
+    etiquetas (0,1,0,0,0), y para una estructura más limpia, evitar el uso de los id's
+    (0,0,1,0,0), ya que son reglas muy
+    potentes, solo deben de ser utilizadas en casos muy específicos. Las clases 
+    (0,0,0,1,0), y los elementos simples (0,0,0,0,1) son lo que más se utiliza en 
+    cuestión de buenas prácticas, una clase llamada con un elemento tendrá más 
+    especificidad que un elemento simple, y así con el id y un id con una clase o 
+    elemento, necesitamos tener cuidado con la especificidad, ya que ésta es la que
+    dicta cómo es que nuestras reglas de CSS serán aplicadas */
+
 h1{
     font-family: serif;
     color: purple;

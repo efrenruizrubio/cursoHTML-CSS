@@ -1,11 +1,15 @@
 .main-nav{
     margin-top: 10px;
+
+    /* Sirve para quitar los "bullet points" o los números de las listas */
     list-style: none;
+
     padding-left: 0;
     background-color: #13a4a4;
 }
 
 .main-nav__item{
+    /* Lo utilizamos para alinear los elementos de forma horizontal */
     display: inline-block;
 }
 
@@ -16,15 +20,26 @@
     text-decoration: none;
 }
 
+/*
+    Pseudoclases(:) Son estados de un elemento.
+    Pseudoelementos(::) Permiten añadir estilos a un elemento en una parte concreta. 
+*/
+
 .main-nav__item a:hover{
+    /* Cambiará el 
+        color del texto a azul cuando el mouse pase encima del elemento */
     color: blue;
 }
 
 .main-nav__item a:active{
+    /* Cambia el color del elemento cuando éste sea presionado con el click izquierdo 
+        del mouse */
     color: red;
 }
 
 .main-nav__item a::after{
+    /* Este pseudoelemento añadirá lo que se encuentre en contenido, después del 
+        elemento (after), si fuera before, sería lo mismo pero antes del elemento */
     content: " | ";
     
 }

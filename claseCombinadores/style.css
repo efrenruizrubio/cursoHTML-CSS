@@ -1,3 +1,6 @@
 h2 + p {
+    /* Esto es un combinador, el cual representa el hijo más cercano.
+        Con "h2 + p", se está diciendo que se busquen todos los elementos "p"
+        cercanos de un "h2", al encontrarlos, se le asignará la regla de "color: red"*/
     color: red;
 }

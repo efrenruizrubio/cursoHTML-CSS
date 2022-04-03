@@ -1,4 +1,13 @@
 *{
+    /* El selector general de la página, se asignan valores de 0 ya que cada navegador
+        asigna sus propios estilos, con esto nos aseguramos de tener el control de los
+        espacios, además de utilizar la propiedad de box-sizing ayuda a calcular el 
+        tamaño de los contenedores, por ejemplo, al tener un contenedor de 500px de 
+        ancho, si se le añade un padding de 10px a la izquierda y derecha, el nuevo
+        tamaño del ancho del contenedor será de 500+10+10, por lo que el contenedor
+        tendrá un espacio no deseado, la propiedad box-sizing se encarga de restar 
+        automáticamente estos tamaños, tanto del padding como del border, para que
+        siempre mida 500px*/
     box-sizing: border-box;
     padding: 0;
     margin: 0;

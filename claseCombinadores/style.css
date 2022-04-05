@@ -1,6 +1,26 @@
-h2 + p {
-    /* Esto es un combinador, el cual representa el hijo más cercano.
+/*h2 + p {
+     Esto es un combinador, el cual representa el hijo más cercano.
         Con "h2 + p", se está diciendo que se busquen todos los elementos "p"
-        cercanos de un "h2", al encontrarlos, se le asignará la regla de "color: red"*/
+        cercanos de un "h2", al encontrarlos, se le asignará la regla de "color: red"
     color: red;
+}
+h2 ~ p{
+     Esto es un combinador, el general sibling, el cual es un combinador
+        que dice que se va a buscar todas las etiquetas p que tengan como hermano un h2
+    color: blue;
+}
+*/
+
+article > p{
+    /* 
+        La etiqueta "div" es padre directa de la etiqueta "p", o "p" es hija directa de
+        "div". A este combinador se le conoce como hijo directo.
+    */
+    color: red;
+}
+
+div p{
+    /* Este combinador es el Descendiente, en este caso, se refiere a que todas las
+        etiquetas "p" que están dentro de la etiqueta*/
+    color: blue;
 }

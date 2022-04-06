@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.parent{
+    border: 2px white dotted;
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+}
+
+#one{
+    width: 300px;
+    height: 100px;
+    padding: 35px;
+    margin: 0 auto;
+    background-color: red;
+    border-radius: 15px;
+    text-align: center;
+
+    position: relative;
+    top: 35px;
+}
+
+#two{
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 100px 50px 100px 50px;
+    background-color: gray;
+    border-radius: 15px;
+}
+
+/* #two{
+    background-color: green;
+} */

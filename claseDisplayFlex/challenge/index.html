@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Challenge with Flex Box</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <img src="./img/logo.png" alt="twitch logo" />
+      <ul class="header__list-container">
+        <li>Home</li>
+        <li>Streamers</li>
+        <li>Categories</li>
+        <li>Clips</li>
+      </ul>
+    </header>
+    <main class="main-container">
+      <aside class="aside-container">
+        <h2 class="aside-container__title">Top Streamers</h2>
+        <ul class="main list-container">
+          <li class="list-container__item">
+            <a
+              href="https://twitch.tv/xqcow"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./img/xqc.jpg"
+                alt="xqc logo"
+                width="150px"
+                height="150px"
+              />
+              <span>xQcOW</span>
+            </a>
+          </li>
+          <li class="list-container__item">
+            <a
+              href="https://twitch.tv/skyshocktv"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./img/skyshock.png"
+                alt="skyshock logo"
+                width="150px"
+                height="150px"
+              />
+              <span>SkyshockTV</span>
+            </a>
+          </li>
+          <li class="list-container__item">
+            <a
+              href="https://twitch.tv/shroud"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./img/shroud.jpg"
+                alt="shroud logo"
+                width="150px"
+                height="150px"
+              />
+              <span>Shroud</span>
+            </a>
+          </li>
+          <li class="list-container__item">
+            <a
+              href="https://twitch.tv/warchiwar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./img/warchi.png"
+                alt="warchi logo"
+                width="150px"
+                height="150px"
+              />
+              <span>WarchiWar</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <section class="section-container">
+        <!-- <video controls preload="auto" class="section-container__video">
+          <source src="#" />
+        </video> -->
+        <iframe
+          src="https://player.twitch.tv/?channel=xqcow&parent=localhost&muted=true"
+          allowfullscreen
+          class="section-container__video"
+        >
+        </iframe>
+      </section>
+    </main>
+    <footer class="footer-container">
+      <ul class="footer__list">
+        <li>
+          <img
+            src="./img/twitter.svg"
+            alt="twitter logo"
+            width="35px"
+            height="35px"
+          />
+        </li>
+        <li>
+          <img
+            src="./img/linkedin.svg"
+            alt="linkedin logo"
+            width="35px"
+            height="35px"
+          />
+        </li>
+        <li>
+          <img
+            src="./img/facebook.svg"
+            alt="facebook logo"
+            width="35px"
+            height="35px"
+          />
+        </li>
+        <li>
+          <img
+            src="./img/instagram.svg"
+            alt="instagram logo"
+            width="35px"
+            height="35px"
+          />
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
